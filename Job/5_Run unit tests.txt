@@ -1,0 +1,28 @@
+2025-08-15T16:41:20.8308175Z ##[section]Starting: Run unit tests
+2025-08-15T16:41:20.8314510Z ==============================================================================
+2025-08-15T16:41:20.8314683Z Task         : Command line
+2025-08-15T16:41:20.8314779Z Description  : Run a command line script using Bash on Linux and macOS and cmd.exe on Windows
+2025-08-15T16:41:20.8314917Z Version      : 2.250.1
+2025-08-15T16:41:20.8315002Z Author       : Microsoft Corporation
+2025-08-15T16:41:20.8315105Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/command-line
+2025-08-15T16:41:20.8315226Z ==============================================================================
+2025-08-15T16:41:21.0432399Z Generating script.
+2025-08-15T16:41:21.0449856Z Script contents:
+2025-08-15T16:41:21.0450508Z npm test
+2025-08-15T16:41:21.0451405Z ========================== Starting Command Output ===========================
+2025-08-15T16:41:21.0488407Z [command]/usr/bin/bash --noprofile --norc /home/nithish/myagent/_temp/171ef191-e738-4b47-bb40-113741233a44.sh
+2025-08-15T16:41:21.2131101Z 
+2025-08-15T16:41:21.2134773Z > simple-node-ci-demo@1.0.0 test
+2025-08-15T16:41:21.2135306Z > jest --ci --reporters=default --reporters=jest-junit
+2025-08-15T16:41:21.2135580Z 
+2025-08-15T16:41:22.2946791Z PASS __tests__/app.test.js
+2025-08-15T16:41:22.2951124Z   GET /
+2025-08-15T16:41:22.3092351Z     ✓ responds with Hello, world! (21 ms)
+2025-08-15T16:41:22.3092821Z 
+2025-08-15T16:41:22.3093193Z Test Suites: 1 passed, 1 total
+2025-08-15T16:41:22.3093391Z Tests:       1 passed, 1 total
+2025-08-15T16:41:22.3093585Z Snapshots:   0 total
+2025-08-15T16:41:22.3093759Z Time:        0.658 s
+2025-08-15T16:41:22.3093934Z Ran all test suites.
+2025-08-15T16:41:22.4213054Z 
+2025-08-15T16:41:22.4269059Z ##[section]Finishing: Run unit tests

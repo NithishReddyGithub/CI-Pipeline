@@ -1,0 +1,10 @@
+2025-08-15T16:41:27.1064386Z ##[section]Starting: Checkout Technical Assessment - ABB@main to s
+2025-08-15T16:41:27.1068292Z ==============================================================================
+2025-08-15T16:41:27.1068445Z Task         : Get sources
+2025-08-15T16:41:27.1068509Z Description  : Get sources from a repository. Supports Git, TfsVC, and SVN repositories.
+2025-08-15T16:41:27.1068639Z Version      : 1.0.0
+2025-08-15T16:41:27.1068701Z Author       : Microsoft
+2025-08-15T16:41:27.1068763Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkId=798199)
+2025-08-15T16:41:27.1068877Z ==============================================================================
+2025-08-15T16:41:27.3662052Z Cleaning any cached credential from repository: Technical Assessment - ABB (Git)
+2025-08-15T16:41:27.3760962Z ##[section]Finishing: Checkout Technical Assessment - ABB@main to s

@@ -1,0 +1,56 @@
+name: my-ci-pipeline
+trigger:
+  branches:
+    include:
+    - main
+stages:
+- stage: __default
+  jobs:
+  - job: Job
+    pool:
+      name: linux-pool
+      demands:
+      - Agent.Name -equals nithish
+    steps:
+    - task: CmdLine@2
+      displayName: 'Check Node & npm versions'
+      inputs:
+        script: |
+          node -v
+          npm -v
+    - task: CmdLine@2
+      displayName: 'Install dependencies'
+      inputs:
+        script: |
+          npm install
+          npm ci
+    - task: CmdLine@2
+      displayName: 'Run unit tests'
+      env:
+        CI: true
+      inputs:
+        script: npm test
+    - task: PublishTestResults@2
+      displayName: 'Publish test results (JUnit)'
+      inputs:
+        testResultsFormat: 'JUnit'
+        testResultsFiles: 'test-results/junit.xml'
+        testRunTitle: 'Node.js Unit Tests'
+        failTaskOnFailedTests: true
+    - task: CmdLine@2
+      displayName: 'Create artifact (tar.gz)'
+      inputs:
+        script: |
+          mkdir -p artifact
+          tar -czf artifact/app.tar.gz app.js server.js package.json package-lock.json
+    - task: ecdc45f6-832d-4ad9-b52b-ee49e94659be@1
+      inputs:
+        path: artifact
+        artifactName: drop
+    - task: CmdLine@2
+      displayName: 'Clean up workspace'
+      inputs:
+        script: |
+          echo "Cleaning workspace..."
+          rm -rf artifact test-results node_modules
+

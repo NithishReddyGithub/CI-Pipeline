@@ -1,0 +1,261 @@
+2025-08-15T16:41:13.6770156Z ##[section]Starting: Job
+2025-08-15T16:41:13.8018808Z ##[section]Starting: Initialize job
+2025-08-15T16:41:13.8021951Z Agent name: 'nithish'
+2025-08-15T16:41:13.8022372Z Agent machine name: 'linux-vm'
+2025-08-15T16:41:13.8022587Z Current agent version: '4.260.0'
+2025-08-15T16:41:13.9016400Z Agent running as: 'nithish'
+2025-08-15T16:41:13.9064201Z Prepare build directory.
+2025-08-15T16:41:13.9308503Z Set build variables.
+2025-08-15T16:41:13.9325929Z Download all required tasks.
+2025-08-15T16:41:14.0203087Z Checking job knob settings.
+2025-08-15T16:41:14.0206477Z    Knob: DockerActionRetries = true Source: $(VSTSAGENT_DOCKER_ACTION_RETRIES) 
+2025-08-15T16:41:14.0207851Z    Knob: UseGitLongPaths = true Source: $(USE_GIT_LONG_PATHS) 
+2025-08-15T16:41:14.0209744Z    Knob: EnableIssueSourceValidation = true Source: $(ENABLE_ISSUE_SOURCE_VALIDATION) 
+2025-08-15T16:41:14.0210581Z    Knob: AgentEnablePipelineArtifactLargeChunkSize = true Source: $(AGENT_ENABLE_PIPELINEARTIFACT_LARGE_CHUNK_SIZE) 
+2025-08-15T16:41:14.0213030Z    Knob: ContinueAfterCancelProcessTreeKillAttempt = true Source: $(VSTSAGENT_CONTINUE_AFTER_CANCEL_PROCESSTREEKILL_ATTEMPT) 
+2025-08-15T16:41:14.0213725Z    Knob: ProcessHandlerSecureArguments = false Source: $(AZP_75787_ENABLE_NEW_LOGIC) 
+2025-08-15T16:41:14.0214202Z    Knob: ProcessHandlerSecureArguments = false Source: $(AZP_75787_ENABLE_NEW_LOGIC_LOG) 
+2025-08-15T16:41:14.0214660Z    Knob: ProcessHandlerTelemetry = true Source: $(AZP_75787_ENABLE_COLLECT) 
+2025-08-15T16:41:14.0215168Z    Knob: UseNewNodeHandlerTelemetry = True Source: $(DistributedTask.Agent.USENEWNODEHANDLERTELEMETRY) 
+2025-08-15T16:41:14.0215656Z    Knob: ProcessHandlerEnableNewLogic = true Source: $(AZP_75787_ENABLE_NEW_PH_LOGIC) 
+2025-08-15T16:41:14.0216381Z    Knob: EnableResourceMonitorDebugOutput = true Source: $(AZP_ENABLE_RESOURCE_MONITOR_DEBUG_OUTPUT) 
+2025-08-15T16:41:14.0216887Z    Knob: EnableResourceUtilizationWarnings = true Source: $(AZP_ENABLE_RESOURCE_UTILIZATION_WARNINGS) 
+2025-08-15T16:41:14.0217606Z    Knob: IgnoreVSTSTaskLib = true Source: $(AZP_AGENT_IGNORE_VSTSTASKLIB) 
+2025-08-15T16:41:14.0218058Z    Knob: FailJobWhenAgentDies = true Source: $(FAIL_JOB_WHEN_AGENT_DIES) 
+2025-08-15T16:41:14.0218639Z    Knob: CheckForTaskDeprecation = true Source: $(AZP_AGENT_CHECK_FOR_TASK_DEPRECATION) 
+2025-08-15T16:41:14.0219282Z    Knob: CheckIfTaskNodeRunnerIsDeprecated246 = True Source: $(DistributedTask.Agent.CheckIfTaskNodeRunnerIsDeprecated246) 
+2025-08-15T16:41:14.0220211Z    Knob: LogTaskNameInUserAgent = true Source: $(AZP_AGENT_LOG_TASKNAME_IN_USERAGENT) 
+2025-08-15T16:41:14.0220699Z    Knob: UseFetchFilterInCheckoutTask = true Source: $(AGENT_USE_FETCH_FILTER_IN_CHECKOUT_TASK) 
+2025-08-15T16:41:14.0221289Z    Knob: Rosetta2Warning = true Source: $(ROSETTA2_WARNING) 
+2025-08-15T16:41:14.0222611Z    Knob: UseSparseCheckoutInCheckoutTask = true Source: $(AGENT_USE_SPARSE_CHECKOUT_IN_CHECKOUT_TASK) 
+2025-08-15T16:41:14.0223256Z    Knob: AgentCDNConnectivityFailWarning = False Source: $(DistributedTask.Agent.AgentCDNConnectivityFailWarning) 
+2025-08-15T16:41:14.0223538Z Finished checking job knob settings.
+2025-08-15T16:41:14.0558383Z Start tracking orphan processes.
+2025-08-15T16:41:14.0690317Z ##[section]Finishing: Initialize job
+2025-08-15T16:41:14.0760559Z ##[section]Async Command Start: DetectDockerContainer
+2025-08-15T16:41:14.0761141Z ##[section]Async Command End: DetectDockerContainer
+2025-08-15T16:41:14.0762034Z ##[section]Async Command Start: DetectDockerContainer
+2025-08-15T16:41:14.0762371Z ##[section]Async Command End: DetectDockerContainer
+2025-08-15T16:41:14.0907842Z ##[section]Starting: Checkout Technical Assessment - ABB@main to s
+2025-08-15T16:41:14.1012635Z ==============================================================================
+2025-08-15T16:41:14.1013840Z Task         : Get sources
+2025-08-15T16:41:14.1014220Z Description  : Get sources from a repository. Supports Git, TfsVC, and SVN repositories.
+2025-08-15T16:41:14.1014398Z Version      : 1.0.0
+2025-08-15T16:41:14.1014662Z Author       : Microsoft
+2025-08-15T16:41:14.1015391Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkId=798199)
+2025-08-15T16:41:14.1015555Z ==============================================================================
+2025-08-15T16:41:14.4711997Z Syncing repository: Technical Assessment - ABB (Git)
+2025-08-15T16:41:14.4719774Z ##[command]git version
+2025-08-15T16:41:14.4989364Z git version 2.25.1
+2025-08-15T16:41:14.5191439Z ##[command]git init "/home/nithish/myagent/2/s"
+2025-08-15T16:41:14.5248163Z Initialized empty Git repository in /home/nithish/myagent/2/s/.git/
+2025-08-15T16:41:14.5270321Z ##[command]git remote add origin https://nithishp@dev.azure.com/nithishp/Technical%AZP2520Assessment%AZP2520-%AZP2520ABB/_git/Technical%AZP2520Assessment%AZP2520-%AZP2520ABB
+2025-08-15T16:41:14.5352912Z ##[command]git sparse-checkout disable
+2025-08-15T16:41:14.5416027Z ##[command]git config gc.auto 0
+2025-08-15T16:41:14.5439915Z ##[command]git config core.longpaths true
+2025-08-15T16:41:14.5473268Z ##[command]git config --get-all http.https://nithishp@dev.azure.com/nithishp/Technical%AZP2520Assessment%AZP2520-%AZP2520ABB/_git/Technical%AZP2520Assessment%AZP2520-%AZP2520ABB.extraheader
+2025-08-15T16:41:14.5529374Z ##[command]git config --get-all http.extraheader
+2025-08-15T16:41:14.5569328Z ##[command]git config --get-regexp .*extraheader
+2025-08-15T16:41:14.5605323Z ##[command]git config --get-all http.proxy
+2025-08-15T16:41:14.5643610Z ##[command]git config http.version HTTP/1.1
+2025-08-15T16:41:14.5717540Z ##[command]git -c http.extraheader="AUTHORIZATION: bearer *** fetch --force --tags --prune --prune-tags --progress --no-recurse-submodules origin --depth=1  +25aa14fa481d9434612ad5c01f8943211a7a046d:refs/remotes/origin/25aa14fa481d9434612ad5c01f8943211a7a046d
+2025-08-15T16:41:14.6771573Z remote: Azure Repos        
+2025-08-15T16:41:14.6870107Z remote: We noticed you're using an older version of Git. For the best experience, upgrade to a newer version.        
+2025-08-15T16:41:14.6870717Z remote: 
+2025-08-15T16:41:14.6871578Z remote: Found 11 objects to send. (0 ms)        
+2025-08-15T16:41:14.7427831Z From https://dev.azure.com/nithishp/Technical%20Assessment%20-%20ABB/_git/Technical%20Assessment%20-%20ABB
+2025-08-15T16:41:14.8179211Z  * [new ref]         25aa14fa481d9434612ad5c01f8943211a7a046d -> origin/25aa14fa481d9434612ad5c01f8943211a7a046d
+2025-08-15T16:41:14.8518704Z ##[command]git -c http.extraheader="AUTHORIZATION: bearer *** fetch --force --tags --prune --prune-tags --progress --no-recurse-submodules origin --depth=1  +25aa14fa481d9434612ad5c01f8943211a7a046d
+2025-08-15T16:41:14.8525194Z remote: Azure Repos        
+2025-08-15T16:41:14.8525523Z remote: We noticed you're using an older version of Git. For the best experience, upgrade to a newer version.        
+2025-08-15T16:41:14.8525846Z remote: 
+2025-08-15T16:41:14.8526111Z remote: Found 0 objects to send. (0 ms)        
+2025-08-15T16:41:14.8660847Z From https://dev.azure.com/nithishp/Technical%20Assessment%20-%20ABB/_git/Technical%20Assessment%20-%20ABB
+2025-08-15T16:41:14.8661337Z  * branch            25aa14fa481d9434612ad5c01f8943211a7a046d -> FETCH_HEAD
+2025-08-15T16:41:14.8971662Z ##[command]git checkout --progress --force refs/remotes/origin/25aa14fa481d9434612ad5c01f8943211a7a046d
+2025-08-15T16:41:14.8978113Z Note: switching to 'refs/remotes/origin/25aa14fa481d9434612ad5c01f8943211a7a046d'.
+2025-08-15T16:41:14.8978295Z 
+2025-08-15T16:41:14.8978668Z You are in 'detached HEAD' state. You can look around, make experimental
+2025-08-15T16:41:14.8979419Z changes and commit them, and you can discard any commits you make in this
+2025-08-15T16:41:14.8979786Z state without impacting any branches by switching back to a branch.
+2025-08-15T16:41:14.8979928Z 
+2025-08-15T16:41:14.8980218Z If you want to create a new branch to retain commits you create, you may
+2025-08-15T16:41:14.8980557Z do so (now or later) by using -c with the switch command. Example:
+2025-08-15T16:41:14.8980694Z 
+2025-08-15T16:41:14.8980971Z   git switch -c <new-branch-name>
+2025-08-15T16:41:14.8981228Z 
+2025-08-15T16:41:14.8981483Z Or undo this operation with:
+2025-08-15T16:41:14.8981590Z 
+2025-08-15T16:41:14.8982182Z   git switch -
+2025-08-15T16:41:14.8982277Z 
+2025-08-15T16:41:14.8982574Z Turn off this advice by setting config variable advice.detachedHead to false
+2025-08-15T16:41:14.8982721Z 
+2025-08-15T16:41:14.8982990Z HEAD is now at 25aa14f Updated ci-pipeline.yml
+2025-08-15T16:41:14.9032430Z ##[section]Finishing: Checkout Technical Assessment - ABB@main to s
+2025-08-15T16:41:14.9064657Z ##[section]Starting: Check Node & npm versions
+2025-08-15T16:41:14.9071991Z ==============================================================================
+2025-08-15T16:41:14.9072181Z Task         : Command line
+2025-08-15T16:41:14.9072306Z Description  : Run a command line script using Bash on Linux and macOS and cmd.exe on Windows
+2025-08-15T16:41:14.9072468Z Version      : 2.250.1
+2025-08-15T16:41:14.9072572Z Author       : Microsoft Corporation
+2025-08-15T16:41:14.9072713Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/command-line
+2025-08-15T16:41:14.9072879Z ==============================================================================
+2025-08-15T16:41:15.1289391Z Generating script.
+2025-08-15T16:41:15.1869657Z ========================== Starting Command Output ===========================
+2025-08-15T16:41:15.1874877Z [command]/usr/bin/bash --noprofile --norc /home/nithish/myagent/_temp/0e797e16-d3b8-4c99-baac-472a03930e61.sh
+2025-08-15T16:41:15.1875307Z v18.20.8
+2025-08-15T16:41:15.2831144Z 10.8.2
+2025-08-15T16:41:15.2931766Z 
+2025-08-15T16:41:15.3007990Z ##[section]Finishing: Check Node & npm versions
+2025-08-15T16:41:15.3036239Z ##[section]Starting: Install dependencies
+2025-08-15T16:41:15.3042952Z ==============================================================================
+2025-08-15T16:41:15.3043153Z Task         : Command line
+2025-08-15T16:41:15.3043258Z Description  : Run a command line script using Bash on Linux and macOS and cmd.exe on Windows
+2025-08-15T16:41:15.3043432Z Version      : 2.250.1
+2025-08-15T16:41:15.3043554Z Author       : Microsoft Corporation
+2025-08-15T16:41:15.3043668Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/command-line
+2025-08-15T16:41:15.3043837Z ==============================================================================
+2025-08-15T16:41:15.5059027Z Generating script.
+2025-08-15T16:41:15.5070558Z ========================== Starting Command Output ===========================
+2025-08-15T16:41:15.5091556Z [command]/usr/bin/bash --noprofile --norc /home/nithish/myagent/_temp/f17bdf2b-5eff-4dc4-acfd-9c249a5e1a2d.sh
+2025-08-15T16:41:17.1423623Z npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+2025-08-15T16:41:17.2973900Z npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+2025-08-15T16:41:18.1890718Z 
+2025-08-15T16:41:18.1892014Z added 358 packages, and audited 359 packages in 3s
+2025-08-15T16:41:18.1893881Z 
+2025-08-15T16:41:18.1897575Z 49 packages are looking for funding
+2025-08-15T16:41:18.1899420Z   run `npm fund` for details
+2025-08-15T16:41:18.1914319Z 
+2025-08-15T16:41:18.1914750Z found 0 vulnerabilities
+2025-08-15T16:41:19.9865069Z npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+2025-08-15T16:41:20.1108660Z npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+2025-08-15T16:41:20.8031832Z 
+2025-08-15T16:41:20.8033340Z added 358 packages, and audited 359 packages in 3s
+2025-08-15T16:41:20.8033844Z 
+2025-08-15T16:41:20.8035228Z 49 packages are looking for funding
+2025-08-15T16:41:20.8035563Z   run `npm fund` for details
+2025-08-15T16:41:20.8044782Z 
+2025-08-15T16:41:20.8045870Z found 0 vulnerabilities
+2025-08-15T16:41:20.8200191Z 
+2025-08-15T16:41:20.8284267Z ##[section]Finishing: Install dependencies
+2025-08-15T16:41:20.8308199Z ##[section]Starting: Run unit tests
+2025-08-15T16:41:20.8314537Z ==============================================================================
+2025-08-15T16:41:20.8314688Z Task         : Command line
+2025-08-15T16:41:20.8314785Z Description  : Run a command line script using Bash on Linux and macOS and cmd.exe on Windows
+2025-08-15T16:41:20.8314921Z Version      : 2.250.1
+2025-08-15T16:41:20.8315006Z Author       : Microsoft Corporation
+2025-08-15T16:41:20.8315110Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/command-line
+2025-08-15T16:41:20.8315231Z ==============================================================================
+2025-08-15T16:41:21.0432497Z Generating script.
+2025-08-15T16:41:21.0449909Z Script contents:
+2025-08-15T16:41:21.0450519Z npm test
+2025-08-15T16:41:21.0451466Z ========================== Starting Command Output ===========================
+2025-08-15T16:41:21.0488552Z [command]/usr/bin/bash --noprofile --norc /home/nithish/myagent/_temp/171ef191-e738-4b47-bb40-113741233a44.sh
+2025-08-15T16:41:21.2131153Z 
+2025-08-15T16:41:21.2134809Z > simple-node-ci-demo@1.0.0 test
+2025-08-15T16:41:21.2135315Z > jest --ci --reporters=default --reporters=jest-junit
+2025-08-15T16:41:21.2135588Z 
+2025-08-15T16:41:22.2946868Z PASS __tests__/app.test.js
+2025-08-15T16:41:22.2951145Z   GET /
+2025-08-15T16:41:22.3092445Z     ✓ responds with Hello, world! (21 ms)
+2025-08-15T16:41:22.3092878Z 
+2025-08-15T16:41:22.3093198Z Test Suites: 1 passed, 1 total
+2025-08-15T16:41:22.3093396Z Tests:       1 passed, 1 total
+2025-08-15T16:41:22.3093591Z Snapshots:   0 total
+2025-08-15T16:41:22.3093765Z Time:        0.658 s
+2025-08-15T16:41:22.3093939Z Ran all test suites.
+2025-08-15T16:41:22.4213138Z 
+2025-08-15T16:41:22.4269137Z ##[section]Finishing: Run unit tests
+2025-08-15T16:41:22.4290282Z ##[section]Starting: Publish test results (JUnit)
+2025-08-15T16:41:22.4296638Z ==============================================================================
+2025-08-15T16:41:22.4296778Z Task         : Publish Test Results
+2025-08-15T16:41:22.4296878Z Description  : Publish test results to Azure Pipelines
+2025-08-15T16:41:22.4296990Z Version      : 2.254.0
+2025-08-15T16:41:22.4297067Z Author       : Microsoft Corporation
+2025-08-15T16:41:22.4297162Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/test/publish-test-results
+2025-08-15T16:41:22.4297282Z ==============================================================================
+2025-08-15T16:41:23.2970983Z Result Attachments will be stored in LogStore
+2025-08-15T16:41:23.3067821Z Run Attachments will be stored in LogStore
+2025-08-15T16:41:23.4595042Z ##[section]Async Command Start: Publish test results
+2025-08-15T16:41:23.5403408Z Publishing test results to test run '6'.
+2025-08-15T16:41:23.5416992Z TestResults To Publish 1, Test run id:6
+2025-08-15T16:41:23.5444316Z Test results publishing 1, remaining: 0. Test run id: 6
+2025-08-15T16:41:23.9983788Z Published Test Run : https://dev.azure.com/nithishp/Technical%20Assessment%20-%20ABB/_TestManagement/Runs?runId=6&_a=runCharts
+2025-08-15T16:41:24.0236892Z ##[section]Async Command End: Publish test results
+2025-08-15T16:41:24.0238077Z ##[section]Finishing: Publish test results (JUnit)
+2025-08-15T16:41:24.0258135Z ##[section]Starting: Create artifact (tar.gz)
+2025-08-15T16:41:24.0263097Z ==============================================================================
+2025-08-15T16:41:24.0263280Z Task         : Command line
+2025-08-15T16:41:24.0263357Z Description  : Run a command line script using Bash on Linux and macOS and cmd.exe on Windows
+2025-08-15T16:41:24.0263482Z Version      : 2.250.1
+2025-08-15T16:41:24.0263568Z Author       : Microsoft Corporation
+2025-08-15T16:41:24.0263656Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/command-line
+2025-08-15T16:41:24.0263792Z ==============================================================================
+2025-08-15T16:41:24.3004423Z Generating script.
+2025-08-15T16:41:24.3027436Z ========================== Starting Command Output ===========================
+2025-08-15T16:41:24.3081851Z [command]/usr/bin/bash --noprofile --norc /home/nithish/myagent/_temp/fc432144-1aa1-45b7-8049-ce5f349e7ea9.sh
+2025-08-15T16:41:24.3251720Z 
+2025-08-15T16:41:24.3300399Z ##[section]Finishing: Create artifact (tar.gz)
+2025-08-15T16:41:24.3321489Z ##[section]Starting: PublishPipelineArtifact
+2025-08-15T16:41:24.3327192Z ==============================================================================
+2025-08-15T16:41:24.3327320Z Task         : Publish Pipeline Artifacts
+2025-08-15T16:41:24.3327416Z Description  : Publish (upload) a file or directory as a named artifact for the current run
+2025-08-15T16:41:24.3327533Z Version      : 1.242.0
+2025-08-15T16:41:24.3327604Z Author       : Microsoft Corporation
+2025-08-15T16:41:24.3327700Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/publish-pipeline-artifact
+2025-08-15T16:41:24.3327845Z ==============================================================================
+2025-08-15T16:41:24.5849207Z Artifact name input: drop
+2025-08-15T16:41:24.5966404Z Uploading pipeline artifact from /home/nithish/myagent/2/s/artifact for build #31
+2025-08-15T16:41:25.4308363Z Using default max parallelism.
+2025-08-15T16:41:25.4310046Z Max dedup parallelism: 192
+2025-08-15T16:41:25.4310363Z DomainId: 0
+2025-08-15T16:41:25.4310705Z ApplicationInsightsTelemetrySender will correlate events with X-TFS-Session f1048f06-f87e-4055-8cb5-767c372b2424
+2025-08-15T16:41:25.4311023Z Hashtype: Dedup1024K
+2025-08-15T16:41:25.4311339Z DedupManifestArtifactClient will correlate http requests with X-TFS-Session f1048f06-f87e-4055-8cb5-767c372b2424
+2025-08-15T16:41:25.4311641Z 1 files processed.
+2025-08-15T16:41:25.4311922Z Processed 1 files from /home/nithish/myagent/2/s/artifact successfully.
+2025-08-15T16:41:25.9985092Z Uploaded 41,838 out of 41,838 bytes
+2025-08-15T16:41:25.9985595Z Content upload is done!
+2025-08-15T16:41:26.0006540Z 
+2025-08-15T16:41:26.0007215Z Content upload statistics:
+2025-08-15T16:41:26.0007918Z Total Content: 83.5 KB
+2025-08-15T16:41:26.0008161Z Physical Content Uploaded: 41.8 KB
+2025-08-15T16:41:26.0008355Z Logical Content Uploaded: 41.8 KB
+2025-08-15T16:41:26.0008537Z Compression Saved: 0.0 bytes
+2025-08-15T16:41:26.0008698Z Deduplication Saved: 41.7 KB
+2025-08-15T16:41:26.0008907Z Number of Chunks Uploaded: 2
+2025-08-15T16:41:26.0009079Z Total Number of Chunks: 3
+2025-08-15T16:41:26.0009148Z 
+2025-08-15T16:41:26.3620780Z Associated artifact 5 with build 31
+2025-08-15T16:41:26.7940608Z ApplicationInsightsTelemetrySender correlated 2 events with X-TFS-Session f1048f06-f87e-4055-8cb5-767c372b2424
+2025-08-15T16:41:26.7950630Z Uploading pipeline artifact finished.
+2025-08-15T16:41:26.8107462Z ##[section]Finishing: PublishPipelineArtifact
+2025-08-15T16:41:26.8129453Z ##[section]Starting: Clean up workspace
+2025-08-15T16:41:26.8135265Z ==============================================================================
+2025-08-15T16:41:26.8135386Z Task         : Command line
+2025-08-15T16:41:26.8135465Z Description  : Run a command line script using Bash on Linux and macOS and cmd.exe on Windows
+2025-08-15T16:41:26.8135578Z Version      : 2.250.1
+2025-08-15T16:41:26.8135647Z Author       : Microsoft Corporation
+2025-08-15T16:41:26.8135741Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/command-line
+2025-08-15T16:41:26.8135848Z ==============================================================================
+2025-08-15T16:41:26.9708032Z Generating script.
+2025-08-15T16:41:26.9729675Z ========================== Starting Command Output ===========================
+2025-08-15T16:41:26.9759947Z [command]/usr/bin/bash --noprofile --norc /home/nithish/myagent/_temp/c026c0ce-deff-41bc-93e8-cf6d77a7b665.sh
+2025-08-15T16:41:26.9825604Z Cleaning workspace...
+2025-08-15T16:41:27.0921290Z 
+2025-08-15T16:41:27.1042775Z ##[section]Finishing: Clean up workspace
+2025-08-15T16:41:27.1064399Z ##[section]Starting: Checkout Technical Assessment - ABB@main to s
+2025-08-15T16:41:27.1068308Z ==============================================================================
+2025-08-15T16:41:27.1068448Z Task         : Get sources
+2025-08-15T16:41:27.1068512Z Description  : Get sources from a repository. Supports Git, TfsVC, and SVN repositories.
+2025-08-15T16:41:27.1068642Z Version      : 1.0.0
+2025-08-15T16:41:27.1068704Z Author       : Microsoft
+2025-08-15T16:41:27.1068766Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkId=798199)
+2025-08-15T16:41:27.1068880Z ==============================================================================
+2025-08-15T16:41:27.3662097Z Cleaning any cached credential from repository: Technical Assessment - ABB (Git)
+2025-08-15T16:41:27.3760988Z ##[section]Finishing: Checkout Technical Assessment - ABB@main to s
+2025-08-15T16:41:27.3787828Z ##[section]Starting: Finalize Job
+2025-08-15T16:41:27.3800852Z Cleaning up task key
+2025-08-15T16:41:27.3801846Z Start cleaning up orphan processes.
+2025-08-15T16:41:27.3993802Z ##[section]Finishing: Finalize Job
+2025-08-15T16:41:27.4018979Z ##[section]Finishing: Job

@@ -1,0 +1,14 @@
+2025-08-15T16:41:26.8129443Z ##[section]Starting: Clean up workspace
+2025-08-15T16:41:26.8135256Z ==============================================================================
+2025-08-15T16:41:26.8135382Z Task         : Command line
+2025-08-15T16:41:26.8135462Z Description  : Run a command line script using Bash on Linux and macOS and cmd.exe on Windows
+2025-08-15T16:41:26.8135575Z Version      : 2.250.1
+2025-08-15T16:41:26.8135643Z Author       : Microsoft Corporation
+2025-08-15T16:41:26.8135738Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/command-line
+2025-08-15T16:41:26.8135845Z ==============================================================================
+2025-08-15T16:41:26.9707987Z Generating script.
+2025-08-15T16:41:26.9729644Z ========================== Starting Command Output ===========================
+2025-08-15T16:41:26.9759923Z [command]/usr/bin/bash --noprofile --norc /home/nithish/myagent/_temp/c026c0ce-deff-41bc-93e8-cf6d77a7b665.sh
+2025-08-15T16:41:26.9825465Z Cleaning workspace...
+2025-08-15T16:41:27.0921207Z 
+2025-08-15T16:41:27.1042748Z ##[section]Finishing: Clean up workspace

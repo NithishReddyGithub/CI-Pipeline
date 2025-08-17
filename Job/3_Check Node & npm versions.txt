@@ -1,0 +1,15 @@
+2025-08-15T16:41:14.9064636Z ##[section]Starting: Check Node & npm versions
+2025-08-15T16:41:14.9071970Z ==============================================================================
+2025-08-15T16:41:14.9072176Z Task         : Command line
+2025-08-15T16:41:14.9072301Z Description  : Run a command line script using Bash on Linux and macOS and cmd.exe on Windows
+2025-08-15T16:41:14.9072464Z Version      : 2.250.1
+2025-08-15T16:41:14.9072567Z Author       : Microsoft Corporation
+2025-08-15T16:41:14.9072708Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/command-line
+2025-08-15T16:41:14.9072875Z ==============================================================================
+2025-08-15T16:41:15.1289319Z Generating script.
+2025-08-15T16:41:15.1869560Z ========================== Starting Command Output ===========================
+2025-08-15T16:41:15.1874867Z [command]/usr/bin/bash --noprofile --norc /home/nithish/myagent/_temp/0e797e16-d3b8-4c99-baac-472a03930e61.sh
+2025-08-15T16:41:15.1875204Z v18.20.8
+2025-08-15T16:41:15.2831049Z 10.8.2
+2025-08-15T16:41:15.2931651Z 
+2025-08-15T16:41:15.3007959Z ##[section]Finishing: Check Node & npm versions

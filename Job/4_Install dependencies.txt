@@ -1,0 +1,31 @@
+2025-08-15T16:41:15.3036217Z ##[section]Starting: Install dependencies
+2025-08-15T16:41:15.3042932Z ==============================================================================
+2025-08-15T16:41:15.3043148Z Task         : Command line
+2025-08-15T16:41:15.3043254Z Description  : Run a command line script using Bash on Linux and macOS and cmd.exe on Windows
+2025-08-15T16:41:15.3043428Z Version      : 2.250.1
+2025-08-15T16:41:15.3043549Z Author       : Microsoft Corporation
+2025-08-15T16:41:15.3043663Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/command-line
+2025-08-15T16:41:15.3043833Z ==============================================================================
+2025-08-15T16:41:15.5058948Z Generating script.
+2025-08-15T16:41:15.5070535Z ========================== Starting Command Output ===========================
+2025-08-15T16:41:15.5091532Z [command]/usr/bin/bash --noprofile --norc /home/nithish/myagent/_temp/f17bdf2b-5eff-4dc4-acfd-9c249a5e1a2d.sh
+2025-08-15T16:41:17.1423423Z npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+2025-08-15T16:41:17.2973806Z npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+2025-08-15T16:41:18.1890578Z 
+2025-08-15T16:41:18.1891956Z added 358 packages, and audited 359 packages in 3s
+2025-08-15T16:41:18.1893869Z 
+2025-08-15T16:41:18.1897561Z 49 packages are looking for funding
+2025-08-15T16:41:18.1899406Z   run `npm fund` for details
+2025-08-15T16:41:18.1914303Z 
+2025-08-15T16:41:18.1914734Z found 0 vulnerabilities
+2025-08-15T16:41:19.9864934Z npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+2025-08-15T16:41:20.1108454Z npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+2025-08-15T16:41:20.8031710Z 
+2025-08-15T16:41:20.8033306Z added 358 packages, and audited 359 packages in 3s
+2025-08-15T16:41:20.8033831Z 
+2025-08-15T16:41:20.8035102Z 49 packages are looking for funding
+2025-08-15T16:41:20.8035553Z   run `npm fund` for details
+2025-08-15T16:41:20.8044747Z 
+2025-08-15T16:41:20.8045858Z found 0 vulnerabilities
+2025-08-15T16:41:20.8200115Z 
+2025-08-15T16:41:20.8284238Z ##[section]Finishing: Install dependencies
