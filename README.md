@@ -17,7 +17,7 @@ This project demonstrates a **Continuous Integration (CI) pipeline** setup in **
 
 **Pipeline Name:** `Technical Assessment - ABB`  
 
-> The full YAML configuration is available in `azure-devops-pipeline.yml`.  
+> The full YAML configuration is available in `ci-pipeline.yml`.  
 
 ---
 
