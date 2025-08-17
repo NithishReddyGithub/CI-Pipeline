@@ -82,7 +82,7 @@ This project demonstrates a **Continuous Integration (CI) pipeline** setup in **
      npm -v
      9.8.1
      ```
-   - Full log file: `1_Job.txt`
+   - Full log file: https://github.com/NithishReddyGithub/CI-Pipeline/blob/main/1_Job.txt
 
 5. **Build Logs in Azure DevOps**  
    - Logs can also be reviewed in the **Logs tab** of the pipeline run.  
